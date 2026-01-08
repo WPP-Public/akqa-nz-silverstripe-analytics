@@ -11,10 +11,10 @@
     ],
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "http://github.com/heyday/silverstripe-analytics/issues"
+        "issues": "https://github.com/WPP-Public/akqa-nz-silverstripe-analytics/issues"
     },
     "require": {
-        "silverstripe/framework": "^5",
+        "silverstripe/framework": "^6",
         "composer/installers": "^2"
     },
     "autoload": {
@@ -24,7 +24,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "3.1.x-dev"
+            "dev-main": "4.x-dev"
         }
     }
 }
