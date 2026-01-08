@@ -5,6 +5,14 @@
 Heyday's standard analytics module to be used across all sites requiring
 analytics
 
+## Installation
+
+```sh
+composer require heyday/silverstripe-analytics
+```
+
+## Setup
+
 First, add details to SilverStripe configuration; for instance by creating an
 _analytics.yml_ file with the following details:
 
