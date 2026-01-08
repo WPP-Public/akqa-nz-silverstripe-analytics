@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Heyday\Analytics;
 
 use SilverStripe\Control\Director;
@@ -14,13 +16,14 @@ use SilverStripe\Control\Director;
 class AnalyticsProvider implements AnalyticsProviderInterface
 {
 
-    private $id;
+    private ?string $id = null;
 
     /**
      * AnalyticsProvider constructor.
-     * @param $id
+     *
+     * @param ?string $id
      */
-    public function __construct($id)
+    public function __construct(?string $id)
     {
         $this->id = $id;
     }
@@ -39,9 +42,9 @@ class AnalyticsProvider implements AnalyticsProviderInterface
         return $this->id;
     }
 
-    public function getAnalyticsCode()
+    public function getAnalyticsCode(): string
     {
-        // TODO: Implement getAnalyticsCode() method.
+        return '';
     }
 
 }

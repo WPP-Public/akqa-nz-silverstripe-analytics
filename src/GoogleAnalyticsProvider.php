@@ -16,9 +16,10 @@ class GoogleAnalyticsProvider extends AnalyticsProvider
     /**
      * @return string
      */
-    public function getAnalyticsCode()
+    public function getAnalyticsCode(): string
     {
         $id = $this->getAnalyticsID();
+
         if (!$id) {
             return '';
         }

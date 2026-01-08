@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Heyday\Analytics;
 
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\Core\Injector\Injector;
 
 /**
@@ -11,7 +13,7 @@ use SilverStripe\Core\Injector\Injector;
  * @package Heyday\Analytics
  * @license MIT License https://github.com/heyday/silverstripe-analytics/LICENSE
  */
-class AnalyticsExtension extends DataExtension
+class AnalyticsExtension extends Extension
 {
     /**
      * @var array

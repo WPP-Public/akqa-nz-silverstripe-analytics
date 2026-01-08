@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Heyday\Analytics;
 
 /**
@@ -12,9 +14,9 @@ interface AnalyticsProviderInterface
 {
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getAnalyticsCode();
+    public function getAnalyticsCode(): string;
 
 
 }
